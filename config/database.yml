@@ -1,0 +1,8 @@
+development:
+  adapter: postgresql
+  database: ashowofhands_development
+test: &test
+  adapter: postgresql
+  database: ashowofhands_test
+cucumber:
+  <<: *test
