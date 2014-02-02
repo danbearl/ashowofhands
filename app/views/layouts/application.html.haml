@@ -1,0 +1,13 @@
+!!!
+%html
+%head
+  %title A Show of Hands
+  = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+  = javascript_include_tag "application", "data-turbolinks-track" => true
+  = csrf_meta_tags
+%body
+  - flash.keys.each do |type|
+    %p
+      = flash[type]
+
+  = yield
