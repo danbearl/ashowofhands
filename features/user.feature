@@ -3,9 +3,9 @@ Feature: Users
     Given I am on the home page
     When I follow "Sign Up"
     And I fill in the following:
-      | email                 | dan@example.com |
-      | password              | pass            |
-      | password_confirmation | pass            |
+      | Email                     | dan@example.com |
+      | Password                   | pass            |
+      | user_password_confirmation | pass            |
     And I press "Sign Up"
     Then I should see "Account successfully created!"
 
