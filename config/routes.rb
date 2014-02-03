@@ -4,6 +4,7 @@ Ashowofhands::Application.routes.draw do
 
   resources :pages
   resources :users
+  resources :user_sessions, only: [:new, :create, :destroy]
 
   root 'pages#index'
 
